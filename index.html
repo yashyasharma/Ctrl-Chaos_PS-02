@@ -1,73 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevWrap — SC-ECE Presents</title>
-  <meta name="description" content="SC-ECE Presents DevWrap — From Sketch to Solution. A hackathon experience built for builders." />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="src/css/styles.css" />
+  <title>Smart Notes AI</title>
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
+
 <body>
 
-  <div id="root">
+  <div class="container">
 
-    <!-- ── LOADER SCREEN ── -->
-    <div id="loader">
-      <div id="loader-title">SC-ECE<br/>PRESENTS</div>
-      <div id="loader-line"></div>
-      <div id="loader-subtitle">INNOVATION × DESIGN × ENGINEERING</div>
-      <div id="loader-hint">
-        💡 <strong>Ready to build?</strong><br/>
-        Start editing <code>index.html</code> to customize this page
-      </div>
+    <h1 class="title">Smart Notes AI</h1>
+
+    <textarea class="input-box" placeholder="Paste your meeting notes here..."></textarea>
+
+    <br><br>
+
+    <button class="btn">Summarize</button>
+
+    <div class="output-box">
+
+      <h2 class="section-title">Summary</h2>
+      <p class="P1">This is where your summary will appear...</p>
+
+      <h2 class="section-title">Decisions</h2>
+      <ul class="list">
+        <li>Decision 1</li>
+        <li>Decision 2</li>
+      </ul>
+
+      <h2 class="section-title">Action Items</h2>
+      <ul class="list">
+        <li><input type="checkbox"> Task 1</li>
+        <li><input type="checkbox"> Task 2</li>
+      </ul>
+
     </div>
 
-    <!-- ── DEVWRAP SCREEN ── -->
-    <div id="devwrap">
-
-      <!-- Marquee bar -->
-      <div id="marquee-bar">
-        <div id="marquee-track">
-          <span>SC-ECE PRESENTS · DEVWRAP · FROM SKETCH TO SOLUTION ·</span>
-          <span>SC-ECE PRESENTS · DEVWRAP · FROM SKETCH TO SOLUTION ·</span>
-          <span>SC-ECE PRESENTS · DEVWRAP · FROM SKETCH TO SOLUTION ·</span>
-          <span>SC-ECE PRESENTS · DEVWRAP · FROM SKETCH TO SOLUTION ·</span>
-          <span>SC-ECE PRESENTS · DEVWRAP · FROM SKETCH TO SOLUTION ·</span>
-          <span>SC-ECE PRESENTS · DEVWRAP · FROM SKETCH TO SOLUTION ·</span>
-          <span>SC-ECE PRESENTS · DEVWRAP · FROM SKETCH TO SOLUTION ·</span>
-          <span>SC-ECE PRESENTS · DEVWRAP · FROM SKETCH TO SOLUTION ·</span>
-        </div>
-      </div>
-
-      <!-- Pixel grid (populated by JS) -->
-      <div id="pixel-grid"></div>
-
-      <div id="devwrap-title">devwrap</div>
-      <div id="devwrap-tagline">From Sketch to Solution</div>
-
-      <div id="welcome-msg">
-        Welcome, Builders. 🚀<br/>
-        <span>Turn your ideas into interfaces.</span>
-      </div>
-
-      <div id="devwrap-hint">
-        💡 <strong>Ready to customize?</strong><br/>
-        Start editing <code>index.html</code> to make changes
-      </div>
-
-    </div><!-- /#devwrap -->
-
-  </div><!-- /#root -->
-
-  <!-- Scripts -->
-  <script src="src/js/main.js"></script>
+  </div>
 
 </body>
+
 </html>
