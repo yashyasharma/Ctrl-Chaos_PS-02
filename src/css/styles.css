@@ -1,78 +1,99 @@
 body {
-      font-family: Arial;
-      background-color: rgb(25, 132, 151);
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, rgb(58, 57, 58), rgb(178, 177, 179));
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-    .container {
-      width: 70%;
-      margin: auto;
-      margin-top: 40px;
-      max-width: 800px;
-    }
+.container {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  max-width: 800px;
+  background-color: rgb(255,255,255);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgba(0,0,0,0.2);
+}
 
-    .title {
-      color: rgb(0, 0, 0);
-    }
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
 
-    .input-box {
-      width: 100%;
-      height: 150px;
-      padding: 12px;
-      border-radius: 10px;
-      border: 1px solid rgb(147, 209, 218);
-      margin-top: 20px;
-      font-size: 14px;
-      outline: none;
-      resize: none;
-      transition: 0.3s;
-    }
+.title-box {
+  background-color: rgb(255,255,255);
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+}
 
-    .btn {
-      margin-top: 15px;
-      padding: 10px 25px;
-      background-color: rgb(0, 0, 0);
-      color: rgb(255, 255, 255);
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+.input-box {
+  width: 700px;
+  height: 150px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgb(200,200,200);
+  margin-top: 10px;
+  font-size: 14px;
+  resize: none;
+  transition: 0.3s;
+}
 
-    .btn:hover {
-      background-color: rgb(255, 255, 255);
-      color: black;
-    
+.input-box:focus {
+  border-color: rgb(120, 80, 200);
+  box-shadow: 0 0 8px rgba(120,80,200,0.3);
+  outline: none;
+}
 
-    }
-    .btn:active{
-      opacity: 0.6;
-    }
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, rgb(175, 173, 179), rgb(85, 85, 86));
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-    .output-box {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
-    text-align: left;
+.btn:hover {
+  transform: scale(1.05);
+}
 
-    }
+.btn:active {
+  opacity: 0.7;
+}
 
-    .section-title {
-      margin-top: 25px;
-      color: rgb(0, 0, 0);
-      margin-left: 35px;
-    }
+.output-box {
+  background-color: rgb(245,245,250);
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+  text-align: left;
+}
 
-    .list {
-      margin-left: 5%;
-      list-style: none;
-      padding-left: 0;
-    }
+.section-title {
+  margin-top: 20px;
+  color: rgb(50,50,50);
+  margin-left: 0;
+}
 
-    .P1{
-      margin-left: 5%;
-    }px
+.list {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.P1 {
+  margin-left: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}

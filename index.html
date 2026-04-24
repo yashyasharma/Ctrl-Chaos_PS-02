@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Notes AI</title>
   <link rel="stylesheet" href="src/css/styles.css">
 </head>
@@ -9,36 +11,35 @@
 <body>
 
   <div class="container">
-
-    <h1 class="title">Smart Notes AI</h1>
-
-    <textarea class="input-box" placeholder="Paste your meeting notes here..."></textarea>
+    <div class="title-box">
+      <h1 class="title">Smart Notes AI</h1>
+    </div>
+    
+    <textarea id="inputText" class="input-box" placeholder="Paste your meeting notes here..."></textarea>
 
     <br><br>
 
-    <button class="btn">Summarize</button>
+    <button class="btn" onclick ="summarize()">Summarize</button>
 
     <div class="output-box">
 
       <h2 class="section-title">Summary</h2>
-      <p class="P1">This is where your summary will appear...</p>
+      <p id="summaryText" class="P1"></p>
 
       <h2 class="section-title">Decisions</h2>
-      <ul class="list">
-        <li>Decision 1</li>
-        <li>Decision 2</li>
+      <ul id="decisionList" class="list">
+       
       </ul>
 
       <h2 class="section-title">Action Items</h2>
-      <ul class="list">
-        <li><input type="checkbox"> Task 1</li>
-        <li><input type="checkbox"> Task 2</li>
+      <ul id="actionList" class="list">
+        
       </ul>
 
     </div>
 
   </div>
-
+ <script src="src/js/main.js"></script>
 </body>
 
 </html>
